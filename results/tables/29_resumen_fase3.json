@@ -1,0 +1,228 @@
+{
+  "fase": "Fase 3: preprocesamiento y partición",
+  "inicio_utc": "2026-10-25T18:58:01.797045+00:00",
+  "fin_utc": "2026-10-25T18:58:45.923675+00:00",
+  "fuente": {
+    "nombre": "URL-Phish: A Feature-Engineered Dataset for Phishing Detection",
+    "version": "2",
+    "doi": "10.17632/65z9twcx3r.2",
+    "url": "https://data.mendeley.com/datasets/65z9twcx3r/2",
+    "autores": [
+      "Linh Dam Minh",
+      "Hung Tran Cong"
+    ],
+    "publicacion": "2026-03-09",
+    "licencia": "CC BY 4.0",
+    "etiquetas": {
+      "0": "benigno",
+      "1": "phishing"
+    },
+    "evidencia": "Coincidencia exacta con el archivo local en 116 600 filas, 100 000 casos benignos, 16 600 casos de phishing, 26 columnas y las mismas columnas de URL y características."
+  },
+  "dataset": {
+    "ruta": "/home/maho/Escritorio/proyecto ia/Dataset.csv",
+    "tamano_bytes": 15149338,
+    "sha256_antes": "d68b3cd0648dcf9c775347416ad1a8995e8a025921fbe3871ca6158d4db3c3a1",
+    "sha256_despues": "d68b3cd0648dcf9c775347416ad1a8995e8a025921fbe3871ca6158d4db3c3a1",
+    "filas_originales": 116600,
+    "columnas": 26,
+    "clases_originales": {
+      "0": 100000,
+      "1": 16600
+    }
+  },
+  "limpieza": {
+    "duplicados_exactos_eliminados": 1369,
+    "duplicados_eliminados_clase_0": 1359,
+    "duplicados_eliminados_clase_1": 10,
+    "filas_modelado": 115231,
+    "clases_modelado": {
+      "0": 98641,
+      "1": 16590
+    },
+    "urls_unicas_modelado": 115231,
+    "dominios_unicos_modelado": 90858,
+    "dominios_contradictorios": 24
+  },
+  "particion_principal": {
+    "metodo": "agrupada_por_dominio",
+    "semilla": 20261025,
+    "fracciones_objetivo": {
+      "entrenamiento": 0.7,
+      "validacion": 0.15,
+      "prueba": 0.15
+    },
+    "grupo": "dom_normalizado",
+    "resumen": [
+      {
+        "metodo": "agrupada_por_dominio",
+        "particion": "entrenamiento",
+        "filas": 80658,
+        "porcentaje_filas": 69.996789,
+        "clase_0": 69044,
+        "clase_1": 11614,
+        "tasa_clase_1_pct": 14.399068,
+        "dominios_unicos": 64110,
+        "dominio_mas_frecuente": "pages.dev",
+        "filas_dominio_mas_frecuente": 1050,
+        "pct_dominio_mas_frecuente": 1.301793,
+        "urls_unicas": 80658
+      },
+      {
+        "metodo": "agrupada_por_dominio",
+        "particion": "validacion",
+        "filas": 17291,
+        "porcentaje_filas": 15.005511,
+        "clase_0": 14808,
+        "clase_1": 2483,
+        "tasa_clase_1_pct": 14.360072,
+        "dominios_unicos": 13722,
+        "dominio_mas_frecuente": "google.com",
+        "filas_dominio_mas_frecuente": 1450,
+        "pct_dominio_mas_frecuente": 8.385865,
+        "urls_unicas": 17291
+      },
+      {
+        "metodo": "agrupada_por_dominio",
+        "particion": "prueba",
+        "filas": 17282,
+        "porcentaje_filas": 14.9977,
+        "clase_0": 14789,
+        "clase_1": 2493,
+        "tasa_clase_1_pct": 14.425414,
+        "dominios_unicos": 13026,
+        "dominio_mas_frecuente": "weebly.com",
+        "filas_dominio_mas_frecuente": 2455,
+        "pct_dominio_mas_frecuente": 14.205532,
+        "urls_unicas": 17282
+      }
+    ],
+    "dominios_compartidos_entrenamiento_prueba": 0,
+    "pct_dominios_prueba_vistos_en_entrenamiento": 0.0,
+    "pct_filas_prueba_con_dominio_en_entrenamiento": 0.0,
+    "estrategia": "Grupos ordenados por tamaño descendente con desempate aleatorio; asignación al split con menor carga combinada de filas y casos clase 1."
+  },
+  "particion_aleatoria_comparacion": {
+    "metodo": "aleatoria_estratificada",
+    "semilla": 20261025,
+    "resumen": [
+      {
+        "metodo": "aleatoria_estratificada",
+        "particion": "entrenamiento",
+        "filas": 80661,
+        "porcentaje_filas": 69.999393,
+        "clase_0": 69048,
+        "clase_1": 11613,
+        "tasa_clase_1_pct": 14.397292,
+        "dominios_unicos": 64762,
+        "dominio_mas_frecuente": "weebly.com",
+        "filas_dominio_mas_frecuente": 1694,
+        "pct_dominio_mas_frecuente": 2.100148,
+        "urls_unicas": 80661
+      },
+      {
+        "metodo": "aleatoria_estratificada",
+        "particion": "validacion",
+        "filas": 17284,
+        "porcentaje_filas": 14.999436,
+        "clase_0": 14796,
+        "clase_1": 2488,
+        "tasa_clase_1_pct": 14.394816,
+        "dominios_unicos": 14806,
+        "dominio_mas_frecuente": "weebly.com",
+        "filas_dominio_mas_frecuente": 361,
+        "pct_dominio_mas_frecuente": 2.088637,
+        "urls_unicas": 17284
+      },
+      {
+        "metodo": "aleatoria_estratificada",
+        "particion": "prueba",
+        "filas": 17286,
+        "porcentaje_filas": 15.001172,
+        "clase_0": 14797,
+        "clase_1": 2489,
+        "tasa_clase_1_pct": 14.398936,
+        "dominios_unicos": 14745,
+        "dominio_mas_frecuente": "weebly.com",
+        "filas_dominio_mas_frecuente": 400,
+        "pct_dominio_mas_frecuente": 2.314011,
+        "urls_unicas": 17286
+      }
+    ],
+    "dominios_compartidos_entrenamiento_prueba": 1653,
+    "pct_dominios_prueba_vistos_en_entrenamiento": 11.21058,
+    "pct_filas_prueba_con_dominio_en_entrenamiento": 23.753326
+  },
+  "preprocesamiento": {
+    "predictores_primarios": [
+      "url_len",
+      "dom_len",
+      "tld_len",
+      "subdom_cnt",
+      "letter_cnt",
+      "digit_cnt",
+      "special_cnt",
+      "eq_cnt",
+      "qm_cnt",
+      "amp_cnt",
+      "dot_cnt",
+      "dash_cnt",
+      "under_cnt",
+      "letter_ratio",
+      "digit_ratio",
+      "spec_ratio",
+      "is_https",
+      "slash_cnt",
+      "entropy",
+      "path_len",
+      "query_len"
+    ],
+    "n_predictores_primarios": 21,
+    "excluidos_como_predictores": [
+      "url",
+      "dom",
+      "tld",
+      "is_ip"
+    ],
+    "faltantes_en_predictores": 0,
+    "imputacion_aplicada": false,
+    "escalado_aplicado": false,
+    "criterio_escalado": "Se ajustará solo con entrenamiento en la fase de modelado.",
+    "estadisticas_ajustadas_con": "entrenamiento"
+  },
+  "controles": {
+    "sha256_original_sin_cambios": true,
+    "filas_reconciliadas": true,
+    "clases_reconciliadas": true,
+    "duplicados_exactos_eliminados": true,
+    "sin_url_repetidas_en_modelado": true,
+    "sin_filas_en_dos_particiones": true,
+    "sin_dominios_en_dos_particiones": true,
+    "sin_dominios_compartidos_entrenamiento_prueba": true,
+    "sin_urls_compartidas_entrenamiento_prueba": true,
+    "sin_filas_compartidas_entrenamiento_prueba": true,
+    "todos_los_grupos_asignados": true,
+    "predictores_sin_faltantes": true,
+    "estadisticas_solo_con_entrenamiento": true,
+    "sin_modelos_entrenados": true,
+    "dataset_original_no_modificado": true
+  },
+  "archivos_generados": [
+    "/home/maho/Escritorio/proyecto ia/results/tables/19_particion_aleatoria_indices.csv",
+    "/home/maho/Escritorio/proyecto ia/results/tables/20_particion_agrupada_indices.csv",
+    "/home/maho/Escritorio/proyecto ia/results/tables/21_comparacion_particiones.csv",
+    "/home/maho/Escritorio/proyecto ia/results/tables/22_resumen_particion_principal.csv",
+    "/home/maho/Escritorio/proyecto ia/results/tables/23_fuga_informacion.csv",
+    "/home/maho/Escritorio/proyecto ia/results/tables/24_dominios_contradictorios_particion.csv",
+    "/home/maho/Escritorio/proyecto ia/results/tables/25_predictores_tratamiento.csv",
+    "/home/maho/Escritorio/proyecto ia/results/tables/26_duplicados_eliminados.csv",
+    "/home/maho/Escritorio/proyecto ia/results/tables/27_tld_faltantes_tratamiento.csv",
+    "/home/maho/Escritorio/proyecto ia/results/tables/28_estadisticas_entrenamiento.csv"
+  ],
+  "no_se_entreno_modelos": true,
+  "versiones": {
+    "python": "3.12.3",
+    "pandas": "3.1.0",
+    "numpy": "2.5.4"
+  }
+}

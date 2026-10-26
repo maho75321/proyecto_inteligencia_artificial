@@ -1,0 +1,15 @@
+fila_id,url,dom,dom_normalizado,is_ip,label,motivo,tld_categoria_sugerida,tratamiento,particion
+1460,http://202.194.232.100:8005/english/index.asp,202.194.232.100,202.194.232.100,1,0,IP sin TLD,sin_tld,Categoría sin_tld solo si se usa tld como variable categórica; no se usa en el conjunto primario.,entrenamiento
+23580,https://www.ucatolica.edu.coeasyweb/,coeasyweb,coeasyweb,0,0,URL malformada,sin_tld,Categoría sin_tld solo si se usa tld como variable categórica; no se usa en el conjunto primario.,entrenamiento
+25127,http://195.191.230.50/en/organisations/transport_institute/,195.191.230.50,195.191.230.50,1,0,IP sin TLD,sin_tld,Categoría sin_tld solo si se usa tld como variable categórica; no se usa en el conjunto primario.,entrenamiento
+26333,http://212.49.120.102/index.php?option=com_content&task=view&id=54&Itemid=126,212.49.120.102,212.49.120.102,1,0,IP sin TLD,sin_tld,Categoría sin_tld solo si se usa tld como variable categórica; no se usa en el conjunto primario.,entrenamiento
+65610,http://112.126.90.210/guodaotong/,112.126.90.210,112.126.90.210,1,0,IP sin TLD,sin_tld,Categoría sin_tld solo si se usa tld como variable categórica; no se usa en el conjunto primario.,validacion
+72153,https://209.59.143.235/,209.59.143.235,209.59.143.235,1,0,IP sin TLD,sin_tld,Categoría sin_tld solo si se usa tld como variable categórica; no se usa en el conjunto primario.,entrenamiento
+88274,http://159.253.211.183/our-hospitals/thornbury-hospital,159.253.211.183,159.253.211.183,1,0,IP sin TLD,sin_tld,Categoría sin_tld solo si se usa tld como variable categórica; no se usa en el conjunto primario.,entrenamiento
+105886,https://43.133.3.131/ETGate/,43.133.3.131,43.133.3.131,1,1,IP sin TLD,sin_tld,Categoría sin_tld solo si se usa tld como variable categórica; no se usa en el conjunto primario.,entrenamiento
+107812,http://132.232.170.50:9011/01cdfr.html,132.232.170.50,132.232.170.50,1,1,IP sin TLD,sin_tld,Categoría sin_tld solo si se usa tld como variable categórica; no se usa en el conjunto primario.,entrenamiento
+108649,http://103.99.210.5/,103.99.210.5,103.99.210.5,1,1,IP sin TLD,sin_tld,Categoría sin_tld solo si se usa tld como variable categórica; no se usa en el conjunto primario.,validacion
+109003,http://184.70.150.18:60001/br01.html,184.70.150.18,184.70.150.18,1,1,IP sin TLD,sin_tld,Categoría sin_tld solo si se usa tld como variable categórica; no se usa en el conjunto primario.,entrenamiento
+109565,https://103.99.210.5/,103.99.210.5,103.99.210.5,1,1,IP sin TLD,sin_tld,Categoría sin_tld solo si se usa tld como variable categórica; no se usa en el conjunto primario.,validacion
+110106,https://43.153.99.18/,43.153.99.18,43.153.99.18,1,1,IP sin TLD,sin_tld,Categoría sin_tld solo si se usa tld como variable categórica; no se usa en el conjunto primario.,validacion
+112699,https://185.187.56.126/,185.187.56.126,185.187.56.126,1,1,IP sin TLD,sin_tld,Categoría sin_tld solo si se usa tld como variable categórica; no se usa en el conjunto primario.,entrenamiento

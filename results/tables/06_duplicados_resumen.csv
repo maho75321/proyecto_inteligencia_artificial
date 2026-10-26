@@ -1,0 +1,4 @@
+tipo,grupos_repetidos,filas_sobrantes,filas_involucradas,porcentaje_sobrante,nota
+filas_completas,1007,1369,2376,1.17409948542024,Grupos de filas idénticas en las 26 columnas.
+url_repetida,1007,1369,2376,1.17409948542024,Grupos de URL repetida; 0 grupo(s) presentan filas no idénticas.
+dominio_repetido,5258,25740,30998,22.07547169811321,No equivale a filas duplicadas: un dominio agrupa muchas URL.

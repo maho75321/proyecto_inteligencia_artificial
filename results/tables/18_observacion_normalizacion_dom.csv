@@ -1,0 +1,8 @@
+metrica,valor,nota
+filas_con_dom_que_inicia_con_www,226,El prefijo no está normalizado en toda la columna.
+valores_dom_unicos_con_www,32,Solo una parte de dom conserva el prefijo www.
+dominios_unicos_original,90860,Recuento directo sobre la columna dom.
+dominios_unicos_al_quitar_www,90859,Recuento tras eliminar el prefijo www.
+pares_www_y_sin_www,1,Dominios que aparecen en ambas formas.
+dominios_contradictorios_original,24,Recuento reproducible con la columna original.
+dominios_contradictorios_al_quitar_www,24,La normalización no cambia el número de dominios contradictorios.

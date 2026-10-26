@@ -1,0 +1,44 @@
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+
+# Cachés de Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Registros locales y temporales
+*.log
+*.tmp
+*.temp
+~$*
+*~
+*.swp
+
+# Configuración local de editores
+.vscode/
+.idea/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Variables de entorno y secretos
+.env
+.env.*
+!.env.example
+
+# Dataset local no publicado
+Dataset.csv

@@ -1,0 +1,29 @@
+variable,tipo,rol,tratamiento,justificacion
+label,objetivo,variable_objetivo,0 = benigno; 1 = phishing,Semántica confirmada en URL-Phish v2.
+fila_id,identificador,trazabilidad,Se conserva en los índices; no es predictor.,Permite reconstruir cada fila del CSV original.
+url,texto,identificador_excluido,No se usa como predictor.,Identificador único de alta cardinalidad y posible fuga.
+dom,texto,solo_agrupacion,Se normaliza y se usa para agrupar la partición.,Evita que un mismo dominio aparezca en train y prueba.
+dom_normalizado,texto_derivado,grupo,"Minúsculas, sin espacios, sin punto final y sin www.",Unifica las 226 filas con prefijo www; no es predictor.
+tld,texto,referencia_excluida,"No se usa en el conjunto primario; si se usa, faltante = sin_tld.",1 258 categorías y 14 faltantes; evitar una explosión de columnas.
+is_ip,binaria,excluida_del_conjunto_primario,Se conserva para análisis de sensibilidad.,Solo 13 valores 1; baja variabilidad y aporte inestable.
+url_len,numerica,predictor_primario,"Sin imputación; valores extremos conservados; escalado solo si el modelo lo requiere, ajustado únicamente con entrenamiento.",Longitud total de la URL.
+dom_len,numerica,predictor_primario,"Sin imputación; valores extremos conservados; escalado solo si el modelo lo requiere, ajustado únicamente con entrenamiento.",Longitud del dominio.
+tld_len,numerica,predictor_primario,"Sin imputación; valores extremos conservados; escalado solo si el modelo lo requiere, ajustado únicamente con entrenamiento.",Longitud del TLD; no hay faltantes en esta variable.
+subdom_cnt,numerica,predictor_primario,"Sin imputación; valores extremos conservados; escalado solo si el modelo lo requiere, ajustado únicamente con entrenamiento.",Característica numérica extraída de la URL.
+letter_cnt,numerica,predictor_primario,"Sin imputación; valores extremos conservados; escalado solo si el modelo lo requiere, ajustado únicamente con entrenamiento.",Característica numérica extraída de la URL.
+digit_cnt,numerica,predictor_primario,"Sin imputación; valores extremos conservados; escalado solo si el modelo lo requiere, ajustado únicamente con entrenamiento.",Característica numérica extraída de la URL.
+special_cnt,numerica,predictor_primario,"Sin imputación; valores extremos conservados; escalado solo si el modelo lo requiere, ajustado únicamente con entrenamiento.",Característica numérica extraída de la URL.
+eq_cnt,numerica,predictor_primario,"Sin imputación; valores extremos conservados; escalado solo si el modelo lo requiere, ajustado únicamente con entrenamiento.",Característica numérica extraída de la URL.
+qm_cnt,numerica,predictor_primario,"Sin imputación; valores extremos conservados; escalado solo si el modelo lo requiere, ajustado únicamente con entrenamiento.",Característica numérica extraída de la URL.
+amp_cnt,numerica,predictor_primario,"Sin imputación; valores extremos conservados; escalado solo si el modelo lo requiere, ajustado únicamente con entrenamiento.",Característica numérica extraída de la URL.
+dot_cnt,numerica,predictor_primario,"Sin imputación; valores extremos conservados; escalado solo si el modelo lo requiere, ajustado únicamente con entrenamiento.",Característica numérica extraída de la URL.
+dash_cnt,numerica,predictor_primario,"Sin imputación; valores extremos conservados; escalado solo si el modelo lo requiere, ajustado únicamente con entrenamiento.",Característica numérica extraída de la URL.
+under_cnt,numerica,predictor_primario,"Sin imputación; valores extremos conservados; escalado solo si el modelo lo requiere, ajustado únicamente con entrenamiento.",Característica numérica extraída de la URL.
+letter_ratio,numerica,predictor_primario,"Sin imputación; valores extremos conservados; escalado solo si el modelo lo requiere, ajustado únicamente con entrenamiento.",Característica numérica extraída de la URL.
+digit_ratio,numerica,predictor_primario,"Sin imputación; valores extremos conservados; escalado solo si el modelo lo requiere, ajustado únicamente con entrenamiento.",Característica numérica extraída de la URL.
+spec_ratio,numerica,predictor_primario,"Sin imputación; valores extremos conservados; escalado solo si el modelo lo requiere, ajustado únicamente con entrenamiento.",Característica numérica extraída de la URL.
+is_https,binaria,predictor_primario,"Sin imputación; valores extremos conservados; escalado solo si el modelo lo requiere, ajustado únicamente con entrenamiento.","Binaria. Se conserva, pero se comparará con y sin ella por su posible artefacto de recolección."
+slash_cnt,numerica,predictor_primario,"Sin imputación; valores extremos conservados; escalado solo si el modelo lo requiere, ajustado únicamente con entrenamiento.",Característica numérica extraída de la URL.
+entropy,numerica,predictor_primario,"Sin imputación; valores extremos conservados; escalado solo si el modelo lo requiere, ajustado únicamente con entrenamiento.",Entropía de Shannon de la URL.
+path_len,numerica,predictor_primario,"Sin imputación; valores extremos conservados; escalado solo si el modelo lo requiere, ajustado únicamente con entrenamiento.",Característica numérica extraída de la URL.
+query_len,numerica,predictor_primario,"Sin imputación; valores extremos conservados; escalado solo si el modelo lo requiere, ajustado únicamente con entrenamiento.",Característica numérica extraída de la URL.

@@ -1,0 +1,7 @@
+metodo,comparacion,filas_compartidas,urls_compartidas,filas_segundo_con_dominio_en_primero,pct_filas_segundo_con_dominio_en_primero,dominios_compartidos,pct_dominios_segundo_vistos_en_primero,pct_dominios_union_compartidos
+aleatoria_estratificada,entrenamiento-validacion,0,0,4053,23.449433,1666,11.252195,2.138584
+aleatoria_estratificada,entrenamiento-prueba,0,0,4106,23.753326,1653,11.21058,2.123205
+aleatoria_estratificada,validacion-prueba,0,0,3068,17.748467,777,5.269583,2.700354
+agrupada_por_dominio,entrenamiento-validacion,0,0,0,0.0,0,0.0,0.0
+agrupada_por_dominio,entrenamiento-prueba,0,0,0,0.0,0,0.0,0.0
+agrupada_por_dominio,validacion-prueba,0,0,0,0.0,0,0.0,0.0

@@ -1,0 +1,120 @@
+{
+  "fecha_ejecucion_utc": "2026-10-25T18:38:12.899569+00:00",
+  "dataset": "/home/maho/Escritorio/proyecto ia/Dataset.csv",
+  "sha256_dataset": "d68b3cd0648dcf9c775347416ad1a8995e8a025921fbe3871ca6158d4db3c3a1",
+  "filas": 116600,
+  "columnas": 26,
+  "distribucion_label": {
+    "0": {
+      "registros": 100000,
+      "porcentaje": 85.763293
+    },
+    "1": {
+      "registros": 16600,
+      "porcentaje": 14.236707
+    }
+  },
+  "valores_faltantes": {
+    "total_celdas": 14,
+    "columnas_con_faltantes": 1,
+    "detalle": {
+      "tld": 14
+    }
+  },
+  "duplicados": {
+    "filas_completas": {
+      "grupos": 1007,
+      "filas_sobrantes": 1369
+    },
+    "url_repetida": {
+      "grupos": 1007,
+      "filas_sobrantes": 1369
+    },
+    "dominio_repetido": {
+      "grupos": 5258,
+      "filas_sobrantes": 25740
+    }
+  },
+  "urls_unicas": 115231,
+  "dominios_unicos": 90860,
+  "dominios_contradictorios": 24,
+  "normalizacion_dom": {
+    "filas_con_dom_que_inicia_con_www": "226",
+    "valores_dom_unicos_con_www": "32",
+    "dominios_unicos_original": "90860",
+    "dominios_unicos_al_quitar_www": "90859",
+    "pares_www_y_sin_www": "1",
+    "dominios_contradictorios_original": "24",
+    "dominios_contradictorios_al_quitar_www": "24"
+  },
+  "constantes_o_casi_constantes": [
+    "is_ip"
+  ],
+  "variables_con_asimetria_alta": [
+    "url_len",
+    "dom_len",
+    "is_ip",
+    "tld_len",
+    "letter_cnt",
+    "digit_cnt",
+    "special_cnt",
+    "eq_cnt",
+    "qm_cnt",
+    "amp_cnt",
+    "dash_cnt",
+    "under_cnt",
+    "letter_ratio",
+    "digit_ratio",
+    "slash_cnt",
+    "entropy",
+    "path_len",
+    "query_len"
+  ],
+  "pares_correlacion_abs_r_ge_0_90": 2,
+  "figuras": [
+    "/home/maho/Escritorio/proyecto ia/figures/fig01_distribucion_clases.png",
+    "/home/maho/Escritorio/proyecto ia/figures/fig02_valores_faltantes.png",
+    "/home/maho/Escritorio/proyecto ia/figures/fig03_distribuciones_numericas.png",
+    "/home/maho/Escritorio/proyecto ia/figures/fig04_comparacion_clases.png",
+    "/home/maho/Escritorio/proyecto ia/figures/fig05_matriz_correlacion.png",
+    "/home/maho/Escritorio/proyecto ia/figures/fig06_dominios_contradictorios.png"
+  ],
+  "tablas": [
+    "/home/maho/Escritorio/proyecto ia/results/tables/01_dimensiones.csv",
+    "/home/maho/Escritorio/proyecto ia/results/tables/02_tipos_datos.csv",
+    "/home/maho/Escritorio/proyecto ia/results/tables/03_distribucion_label.csv",
+    "/home/maho/Escritorio/proyecto ia/results/tables/04_estadisticas_descriptivas.csv",
+    "/home/maho/Escritorio/proyecto ia/results/tables/05_valores_faltantes.csv",
+    "/home/maho/Escritorio/proyecto ia/results/tables/06_duplicados_resumen.csv",
+    "/home/maho/Escritorio/proyecto ia/results/tables/07_distribucion_etiquetas_por_dominio.csv",
+    "/home/maho/Escritorio/proyecto ia/results/tables/08_resumen_dominios.csv",
+    "/home/maho/Escritorio/proyecto ia/results/tables/09_dominios_contradictorios.csv",
+    "/home/maho/Escritorio/proyecto ia/results/tables/10_top_dominios.csv",
+    "/home/maho/Escritorio/proyecto ia/results/tables/11_constantes_casi_constantes.csv",
+    "/home/maho/Escritorio/proyecto ia/results/tables/12_valores_extremos.csv",
+    "/home/maho/Escritorio/proyecto ia/results/tables/13_matriz_correlacion_pearson.csv",
+    "/home/maho/Escritorio/proyecto ia/results/tables/14_pares_correlacion_alta.csv",
+    "/home/maho/Escritorio/proyecto ia/results/tables/15_correlacion_con_label.csv",
+    "/home/maho/Escritorio/proyecto ia/results/tables/16_comparacion_clases.csv",
+    "/home/maho/Escritorio/proyecto ia/results/tables/17_frecuencias_categoricas_por_clase.csv",
+    "/home/maho/Escritorio/proyecto ia/results/tables/18_observacion_normalizacion_dom.csv"
+  ],
+  "verificaciones": {
+    "total_label_igual_filas": true,
+    "porcentajes_label_suman_100": true,
+    "total_dominios_igual_filas": true,
+    "dominios_contradictorios_reproducidos": 24,
+    "suma_faltantes_igual_celdas_faltantes": true,
+    "filas_tabla_tipos_igual_columnas": true,
+    "figuras_existentes_y_no_vacias": true,
+    "tablas_existentes_y_no_vacias": true
+  },
+  "versiones": {
+    "python": "3.12.3",
+    "pandas": "3.1.0",
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2",
+    "seaborn": "0.13.2",
+    "scipy": "1.18.1"
+  }
+}

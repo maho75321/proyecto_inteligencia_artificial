@@ -1,0 +1,5 @@
+python-docx==1.2.0
+Pillow==10.2.0
+
+# LibreOffice/UNO no se instala con pip. Se requiere LibreOffice 24.2 o
+# compatible con el módulo UNO y el Python del sistema para generar el DOCX.

@@ -1,0 +1,7 @@
+metodo,particion,filas,porcentaje_filas,clase_0,clase_1,tasa_clase_1_pct,dominios_unicos,dominio_mas_frecuente,filas_dominio_mas_frecuente,pct_dominio_mas_frecuente,urls_unicas
+aleatoria_estratificada,entrenamiento,80661,69.999393,69048,11613,14.397292,64762,weebly.com,1694,2.100148,80661
+aleatoria_estratificada,validacion,17284,14.999436,14796,2488,14.394816,14806,weebly.com,361,2.088637,17284
+aleatoria_estratificada,prueba,17286,15.001172,14797,2489,14.398936,14745,weebly.com,400,2.314011,17286
+agrupada_por_dominio,entrenamiento,80658,69.996789,69044,11614,14.399068,64110,pages.dev,1050,1.301793,80658
+agrupada_por_dominio,validacion,17291,15.005511,14808,2483,14.360072,13722,google.com,1450,8.385865,17291
+agrupada_por_dominio,prueba,17282,14.9977,14789,2493,14.425414,13026,weebly.com,2455,14.205532,17282

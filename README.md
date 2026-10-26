@@ -98,15 +98,6 @@ Ejecución completa, solo si se desea reproducir o actualizar los resultados:
 
 Advertencia: estos scripts escriben en `figures/` y `results/tables/`. Reejecutarlos puede sobrescribir los resultados versionados. Conserva una copia antes de hacerlo.
 
-### Regenerar el PDF del informe
-
-El DOCX es el archivo editable principal. El PDF se puede regenerar con:
-
-```bash
-libreoffice --headless --convert-to pdf --outdir report report/informe_segunda_unidad.docx
-```
-
-También existe `src/generate_report.py`, que construye el DOCX con `python-docx` y LibreOffice/UNO. Requiere el Python del sistema, no el `.venv`, y no se reejecutó durante la preparación del repositorio. No se debe ejecutar si solo se quiere leer o entregar el informe ya terminado.
 
 ## Metodología
 
